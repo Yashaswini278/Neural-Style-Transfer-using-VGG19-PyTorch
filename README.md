@@ -1,5 +1,5 @@
 # Neural-Style-Transfer-using-VGG19-PyTorch
-The objective of this project is to create a new image that follows the content of one image and the style of another image, using neural style transfer on the pretrained VGG-19 convolutional neural network. The target image was initialized with random noise.
+The objective of this project is to create a new image that follows the content of one image and the style of another image, using neural style transfer of a target image using a pretrained VGG-19 convolutional neural network. The target image was initialized with random noise.
 ![before](images/Before.png)
 ## Feature Maps and Gram Matrices
 The feature activation maps of content image and style image were obtained from the conv2d layers of the VGG19 network. The gram matrices were calculated for the style image from the feature maps. 
