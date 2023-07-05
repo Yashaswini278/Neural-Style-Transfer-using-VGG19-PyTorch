@@ -8,12 +8,12 @@ The feature activation maps of content image and style image were obtained from 
 ### Visualize Style Feature Maps and Style Gram Matrices
 ![style](images/style.png)
 ## Loss Function 
-Conv1 layer and Conv4 layer were used for content matching 
-<br> Conv0 layer to Conv4 layer was used for style matching
+Conv1 layer and Conv4 layer were used for content matching.
+<br> Conv0 layer to Conv4 layer was used for style matching.
 <br> The style loss gain factors used were [1, 0.5, 0.5, 0.4, 0.2, 0.1]
 <br>The content loss was calculated as the MSE between content image feature maps and target image feature maps. 
 <br>The style loss was calculated as the MSE between style gram matrices and target gram matrices. 
-<br>The target image was trained on 1500 epochs to reduced the combined content loss and style loss using RMSprop optimizer. 
+<br>The target image was trained on 1500 epochs to reduce the combined content and style loss using RMSprop optimizer. 
 ### Target Image Transformation every 100 epochs 
 ![transformation](images/Transformation.png)
 ### Content and Style Loss Curves
